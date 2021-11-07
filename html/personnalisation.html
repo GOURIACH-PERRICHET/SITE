@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>GP-LUNETIER</title>
+        <link rel="stylesheet" href="../css/personnalisation.css">
+        <link rel="stylesheet" href="../css/header_footer_scrollup.css">
+        <link rel="stylesheet" href="../css/panierpage.css">
+    </head>
+
+    <body>
+        <header></header>
+
+        <section class=main-content>
+            
+            <form name='personnalisation'> 
+                <div class="perso" ><img id="image_personnalisation" src="" alt="images du produit" class="image"></div>
+                <h1> Personnalisation </h1>
+                
+                <fieldset>
+                    <p id=item-name> Produit choisit: </p>
+                </fieldset>
+              
+              <fieldset>
+                  <legend>personnalisation</legend>
+                  <h2>
+                    <button onclick="SwitchImage('bleu')" id="bleu" >bleu</button>
+                  </h2>
+              </fieldset>
+
+              <fieldset>
+                  <legend>Commande</legend>
+                  <p>
+                  <label for=gift> Emballage cadeau: </label>
+                  <input type="checkbox" name=gift onclick="updateItem()" id=gift>
+                  </p>
+
+                  <p>
+                  <label for=quantity> Nombre </label>
+                  <input type="number" value=1 min=1 max=999 name=quantity onchange="updateItem()" id=quantity>
+                  </p>
+              </fieldset>
+              <fieldset>
+                  <div class=action-buttons>
+                      <p id=item-price> Prix: </p>
+                      <input type="button" value="Ajouter au panier" id="buy" onclick='addToCart()'>
+                      <input type="reset" value="Effacer" onclick="updateItem()" id="reset">
+                  </div>
+              </fieldset>
+
+
+              
+          </form>
+      </section>
+
+
+
+        <div id="scrollUp">
+            <a href="#top"><img src="../logo/to_top.png"/></a>
+            </div>
+        
+          <footer></footer >
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../JS/fonction.js"></script>
+        <script src="../JS/personalisation.js"></script>
+    </body>
+</html>

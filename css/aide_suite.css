@@ -1,0 +1,36 @@
+/* Style the body */
+body {
+    font-family: Arial;
+    background-image: url("../images/background_aide.jpg");
+    margin: 0;
+  }
+  
+  /* Header/Logo Title */
+  .thanks {
+    padding: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+  }
+  
+  /* Page Content */
+  .content {padding:40px;}
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #040b70;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%/50%;
+  }
+  

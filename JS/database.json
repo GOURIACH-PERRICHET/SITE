@@ -1,0 +1,49 @@
+
+
+{
+    "1":{
+        "titre": "Lunettes de vue",
+        "prix":15,
+        "couleur":{
+            "bleu":"../images/vueB.jpg",
+            "gris":"../images/vueG.jpg",
+            "jaune":"../images/vueJ.jpg"
+        }
+},
+    "2":{
+        "titre" : "Lunettes de soleil",
+        "prix":35,
+        "couleur":{
+            "bleu":"../images/soleilB.jpg",
+            "gris":"../images/soleilG.jpg",
+            "jaune":"../images/soleilJ.jpg"
+        }
+},
+    "3":{
+        "titre": "lentilles",
+        "prix":60.5,
+        "couleur":{
+            "bleu":"../images/lentilleB.jpg",
+            "gris":"../images/lentilleG.jpg",
+            "jaune":"../images/lentilleJ.jpg"
+        }
+},
+    "4":{
+        "titre":"telescope",
+        "prix":99.99,
+        "couleur":{
+            "bleu":"../images/telescopeB.jpg",
+            "gris":"../images/telescopeG.jpg",
+            "jaune":"../images/telescopeJ.jpg"
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

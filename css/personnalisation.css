@@ -1,0 +1,214 @@
+body {
+    background-color: black;
+    background-size: cover;
+  }
+  
+  
+  .image-container {
+    background-image: url("../images/acceuil.jpg"); /* The image used - important! */
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 300px; /* Some height */
+  }
+  
+  .texte {
+    background-color: white;
+    color: black;
+    font-size: xx-large; /* Responsive font size */
+    font-family:'American Typewriter', serif;
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 0;
+    background-color: #000000;
+    padding: 0;
+  }
+  
+  .grid-container a {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .grid-container a:hover {
+    background-color: rgb(65, 62, 62);
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Add a color to the active/current link */
+  .grid-container a.active {
+    background-color: #5fd311;
+    color: white;
+  }
+
+  
+.foot {
+    background-color: black;
+    height: auto;
+    width: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .lien{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  #scrollUp
+  {
+  position: fixed;
+  bottom : 10px;
+  right: -100px;
+  opacity: 0.8;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #040faa;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%/50%;
+  }
+  
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-flow: wrap row;
+
+    width: 100%;
+  
+
+    margin: auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+    background-image: url("../images/abstract-gray-oil-paint-textured-background.jpg");
+    border: 1px solid;
+    border-radius: 16px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.perso{
+    background-color: whitesmoke;
+    grid-column-start: 1;
+    border-radius: 16px;
+    border: 1px black solid;
+    margin: 20px;
+    height: 441px;
+    width: 500px;
+
+}
+
+form {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    background-color: whitesmoke;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+form fieldset {
+    width:90%;
+    display: inline;
+}
+
+form input {
+    cursor: pointer; 
+}
+
+form .action-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#buy, #reset {
+    border-radius: 16px;
+    height: 50%;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+#buy {
+    background-color: rgb(6, 36, 211);
+}
+
+#reset{
+    background-color: rgb(0, 3, 160);
+}
+
+
+.image {
+  width :20vw ;
+}

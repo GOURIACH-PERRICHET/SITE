@@ -1,0 +1,21 @@
+.image{
+    background-image: url("../images/blue-snow.png"); 
+    
+}
+
+header{
+    text-align: center;
+    color: blue;
+}
+body{
+    text-align: center;
+    color: rgb(128, 128, 128) ;
+}   
+
+img {
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }

@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/abstract-gray-oil-paint-textured-background.jpg");
+  background-size: cover;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.text1 {
+  text-align: center;
+  font-size: 70px;
+  color: rgb(73, 72, 72);
+}
+
+.text2 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+}
+
+
+.form{
+  text-align: left;
+  margin-top: 15px;
+}
+
+
+
+
+.boite_recap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Nunito", serif;
+}
+
+
+.button{
+  background-color: #003cff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:10%/50%;
+  font-family: "Lobster", serif;
+}
+.bloc_payement{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+.bloc_fils_panier{
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", serif;
+}
+
+.back {
+  background-color: #bababa00;
+  color: rgb(0, 0, 0);
+  border-radius: 10%/50%;
+  position:absolute ;
+  border-color: white;
+  border-style: inset;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+
+.back:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}

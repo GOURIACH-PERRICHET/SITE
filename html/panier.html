@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panier</title>
+<link rel="stylesheet" href="../css/panierpage.css">
+</head>
+<body>
+
+  <body>
+      <form action="page_accueil.html">
+        <button type="submit" value="Retour_acceuil" class="back"> Acceuil </button>
+      </form>
+
+    <h2 class="text1">Panier</h2>
+    <p class="text2">Merci pour vos achats, vous avez l'oeil dit donc !</p>
+    
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>Articles</h3>
+          <p>Some text</p>
+          <p>Some text</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <div class="bloc_fils_livraison">
+          <h3>Formulaire</h3>
+            <form action="panier_suite.html" class="form">
+                <div class=form>
+                  <label for="name">Nom*: </label>
+                  <input type="text" name="name" id="name" placeholder="Dupont" required>
+                </div>
+                <div class="form">
+                    <label for="name">Prénom*: </label>
+                    <input type="text" name="surname" id="surname" placeholder="John" required>
+                </div>
+                <div class="form">
+                    <label for="name">Numéro de téléphone*:</label>
+                    <input type="text" name="phone" id="phone" placeholder="0745324577" required maxlength="10">
+                </div>
+                <div class="form">
+                  <label for="name">Date de livraison souhaitée*:</label>
+                  <input type="date" id="start" name="trip-start" value="2021-09-11" min="2021-09-11" max="2022-12-01">
+                </div>
+                <div class="form">
+                  <label for="email">Adresse mail*: </label>
+                  <input type="email" name="email" id="email" placeholder="exemple@email.com" required>
+                </div>
+                <div class="form">
+                  <label for="adresse"> Adresse de livraion*: </label>
+                  <input id="adresse" onkeyup="recupadress()" required placeholder="12 rue Jean Ferrey, 69000, Lyon"></input>
+                </div>
+                <div class="form">
+                  <p class="commentaire">Renseignements :</p>
+                <textarea id="story" name="story" rows="5" cols="33"></textarea>
+                </div>
+                <div class="form_bouton">
+                  <button type="submit" value="Commander" class="button">Commander
+                  <button type="reset" value="Remise à zero" class="button">Remise à zéro
+                </div>
+            </div>
+            </div>
+          </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>Récapitulatif</h3>
+          <div class="bloc_fils_prix">
+            <div class="boite_recap">
+              <div class="boite_prix">Prix des articles: <p id="somme_prix">0</p>
+              </div>
+              <div class="boite_livraison">Livraison :<p id="somme_livraison">0</p>
+              </div>
+            </div>
+            <div class="boite_livraison">Livraison Express :<p id="somme_livraison">0</p>
+            </div>
+              <div class="boite_total">Total : <p id="somme_totale">0</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <script src="../JS/panier.js"></script>
+    </body>
+    </html>

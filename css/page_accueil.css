@@ -1,0 +1,193 @@
+body {
+  background-color: black;
+  background-size: cover;
+}
+
+
+.image-container {
+  background-image: url("../images/acceuil.jpg"); /* The image used - important! */
+  background-size: cover;
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 300px; /* Some height */
+}
+
+.texte {
+  background-color: white;
+  color: black;
+  font-size: xx-large; /* Responsive font size */
+  font-family:'American Typewriter', serif;
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+
+
+
+.quote {
+  font-family:italic;
+  background-color: rgb(12, 204, 218);
+  overflow: auto;
+  padding: 14px 16px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.fact1{
+  font-family:"fantasy";
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  padding: 14px 16px;
+  text-align: center;
+  color: rgb(36, 172, 24);
+  font-size: 17px;
+}
+
+.fact2{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  padding: 14px 16px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+}
+
+.nav_bar {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  background-color: #000000;
+  padding-left: 3%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.nav_bar a {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+}
+
+.nav_bar a:hover {
+  background-color: rgb(65, 62, 62);
+  color: rgb(255, 255, 255);
+  padding: 12px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  background-color: #000000;
+  padding-left: 12%;
+  padding-right: 1%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.grid-container a {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.grid-container a:hover {
+  background-color: rgb(65, 62, 62);
+  color: rgb(255, 255, 255);
+}
+
+/* Add a color to the active/current link */
+.grid-container a.active {
+  background-color: #5fd311;
+  color: white;
+}
+
+
+.image{
+  opacity :1;
+  display:block;
+  width:100%;
+  height:auto;
+  border-style: inset;
+  transition:auto;
+  transition: .5s ease;
+  backface-visibility:hidden;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+} 
+.middle{
+  transition : .5s ease;
+  opacity:0;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align:center;
+}
+.conteneur{
+  position : relative;
+  width:96%;
+}
+.conteneur:hover .image{
+  opacity: 0.3;
+}
+.conteneur:hover .middle{ 
+  box-shadow: 0 0 2px 1px black;
+  opacity :1;
+}
+.text {
+  background-color: black;
+  color:white;
+  font-size: 16px;
+  padding:16px 32px;
+  
+}    
+
+
+.foot {
+  background-color: black;
+  height: auto;
+  width: auto;
+  font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.lien{
+  color: white;
+  text-decoration: none;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.8;
+}
